@@ -1,0 +1,56 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ff5722;
+}
+
+.content {
+    padding-top: 60px; /* Ensure content isn't hidden behind the fixed navbar */
+}
+
+section {
+    padding: 60px;
+    height: 600px;
+}
+
+section:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+section:nth-child(even) {
+    background-color: #e2e2e2;
+}
